@@ -1,0 +1,38 @@
+footer{
+    position: relative;
+   background-color:#000000;
+   
+}
+
+.footer-container{
+    padding:20px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-container > .footer-text >p,a{
+    font-size: 1.1rem;
+    color:#adadad;
+    
+}
+
+.footer-text  a:hover{
+    color:#ffff;
+    border-bottom:1px solid #adadad;
+
+}
+.footer-social-icons a{
+   
+    font-size:1.3rem;
+    cursor:pointer;
+    padding:0px 2px;
+
+}
+.footer-social-icons a:hover{
+   color:#ffff; 
+}
+
+.nav-hide{
+    display: none;
+}

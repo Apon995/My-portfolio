@@ -1,0 +1,80 @@
+/* --header-style---- */
+
+
+header{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    background-color:#000066;
+    color:#ffff; 
+    padding:8px 10%;
+    position: sticky;
+    top:0;
+    z-index:10;
+    
+
+}
+.menu-bar{
+    font-size: 26px;
+    position: relative;
+    left: 59px;
+    top: 1px;
+    cursor: pointer;
+    display: none; 
+
+}
+.cross-bar{
+    font-size: 26px;
+    position: absolute;
+    top: 3px;
+    left: 4px;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #adadad;
+    border-radius: 50%;
+    text-align: center;
+    color:white; 
+    cursor:pointer;
+    display: none;
+
+}
+
+header > h1  {
+    font-size:2rem;
+}
+
+header > nav ul {
+    display: flex;
+}
+
+header > nav > ul > li{
+    list-style:none;
+    padding:0 10px;
+    
+}
+
+header > nav > ul > li a {
+    Color:#ffff; 
+    font-size:1.2rem;
+    font-weight: 500;
+    position: relative;
+}
+header > nav > ul > li > a::after{
+    content: '';
+    width: 0;
+    height: 5px;
+    position: absolute;
+    background-color: #adadad;
+    left: 0px;
+    bottom: 0;
+    top: 28px;
+    border-radius: 10px;
+    transition: all 0.5s;
+
+    
+}
+header > nav > ul > li > a:hover::after{
+    width: 100%;
+}
+

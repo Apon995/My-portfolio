@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal portfolio</title>
+    <link rel="icon" type="icon+svg+png " href="./assets/house-solid.svg" />
+    <link rel="stylesheet" href="header.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="footer.css" />
+    <link rel="stylesheet" href="not-found.css" />
+    <link rel="stylesheet" href="mideaquery.css" />
+
+    <!-- ---Type-script-link--- -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+  </head>
+
+  <body>
+    <header class="header-section" id="header">
+      <h1><span>Personal</span> porfolio</h1>
+      <p class="menu-bar" onclick="opensidebar()">
+        <i class="fa-solid fa-bars"></i>
+      </p>
+      <nav>
+        <ul class="nav-ul nav">
+          <p class="cross-bar" onclick="shutdownsidebar()">
+            <i class="fa-solid fa-x"></i>
+          </p>
+          <li><a href="#Home">Home</a></li>
+          <li><a href="#About">About</a></li>
+          <li><a href="#service">Service</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- ------not-found-pagee------ -->
+    <div class="not-found-container error error-page">
+      <p>404 not found</p>
+      <div class="box">
+        <div class="left-side">
+          <img src="./assets/Scarecrow.png" alt="ghost png" />
+        </div>
+
+        <div class="right-side">
+          <h2>
+            I Have bad <br />
+            news for you
+          </h2>
+          <p>
+            The page you are looking <br />
+            For might be remove or is <br />
+            temporary unavaible
+          </p>
+
+          <a href="#header" class="back">Back to Home page</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- -----main-section------- -->
+    <main id="Home" class="main-section">
+      <div class="developer-title-section">
+        <div class="container">
+          <div class="developer-title">
+            <h1>
+              Hey ! I am shofikul islam <span id="my-name">Parvez</span> <br />
+              And I am Junior <span id="element"></span>
+            </h1>
+          </div>
+          <div class="developer-logo">
+            <img src="./assets/developer-img.png" alt="developer image" />
+          </div>
+        </div>
+      </div>
+
+      <!-- ------about-me-section----- -->
+      <div class="About-section over-the-developer-sectio" id="About">
+        <div class="container">
+          <div class="About-column-1">
+            <img src="./assets/my-img.jpg" alt="" />
+          </div>
+
+          <div class="About-column-2">
+            <h1>About me</h1>
+            <p>
+              Hello, I'm Shofikul Islam Parvez, a dedicated front-end developer with a passion for crafting immersive digital experiences. Proficient in HTML, CSS, and JavaScript, I leverage my skills to create user-centric designs that blend innovation with functionality. With a keen eye for detail and a commitment to continuous learning, I aim to bring ideas to life through captivating and seamless web interfaces. Let's build the web together, one pixel at a time.
+            </p>
+
+            <br />
+
+            <div class="tab-button">
+              <p class="link active-link skill" id="Skillbtn">Skills</p>
+              <p class="link Expricence" id="Expriencebtn">Exprience</p>
+              <p class="link Education" id="Educationbtn">Education</p>
+            </div>
+            <div class="About-info">
+              <div class="Skills" id="skill">
+                <ul>
+                  <li>HTML</li>
+                  
+                  <p class="percentage-bar">
+                    <span class="HTML-percent-range-color"></span>
+                  </p>
+                  <li>CSS</li>
+                  
+                  <p class="percentage-bar">
+                    <span class="CSS-percent-range-color"></span>
+                  </p>
+                  <li>Javscript</li>
+                 
+                  <p class="percentage-bar">
+                    <span class="JS-percent-range-color"></span>
+                  </p>
+                  <li>React</li>
+                  
+                  <p class="percentage-bar">
+                    <span class="React-percent-range-color"></span>
+                  </p>
+                  <li>MongoDB</li>
+                  
+                  <p class="percentage-bar">
+                    <span class="MongoDB-percent-range-color"></span>
+                  </p>
+
+                  <li>Fire base</li>
+                  
+                  <p class="percentage-bar">
+                    <span class="Firebase-percent-range-color"></span>
+                  </p>
+
+                  <li>Express Js</li>
+                  
+                  <p class="percentage-bar">
+                    <span class="Express-percent-range-color"></span>
+                  </p>
+                  <li>Tailwind css</li>
+                  
+                  <p class="percentage-bar">
+                    <span class="Tailwind-percent-range-color"></span>
+                  </p>
+                  
+                </ul>
+
+                <button
+                  class="btn btn-learn-more toggle-btn"
+                  onclick="notfoundpage()"
+                >
+                  Learn more
+                </button>
+              </div>
+              <div class="Expricence" id="Expricence">
+                <li>Loading .....</li>
+              </div>
+              <div class="Education" id="Education">
+                <ul>
+                  <li>CST Enginnering</li>
+                  <span>from Govt. graphic arts institute</span>
+
+                  <li>BSc in CSE</li>
+                  <span>Loading .................. </span>
+
+                  <li>MSc in CSE</li>
+                  <span>Loading .................. </span>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- -----service-section------ -->
+        <div class="Service-section" id="service">
+          <div class="service-box">
+            <h1>My services</h1>
+            <div class="service-row">
+              <div class="cards">
+                <i class="fa-sharp fa-solid fa-code icon"></i>
+                <h3>Web Design</h3>
+                <p>
+                  Web design is the process of planning, conceptualizing, and
+                  arranging content online. Today, designing a website goes
+                  beyond aesthetics to include the website’s overall
+                  functionality. Web design also includes web apps, mobile apps,
+                  and user interface design.
+                </p>
+                <p class="cards-btn learn-more-btn" onclick="notfoundpage()">
+                  learn more
+                </p>
+              </div>
+              <div class="cards">
+                <i class="fa-brands fa-adn icon"></i>
+                <h3>UI/UX Design</h3>
+                <p>
+                  Your product's interface plays a significant role in how users
+                  feel about their experience: a good user interface (UI) design
+                  ensures they stick around and engage for longer, whereas a bad
+                  UI design might cause users to abandon your product.
+                </p>
+
+                <p class="cards-btn learn-more-btn" onclick="notfoundpage()">
+                  learn more
+                </p>
+              </div>
+              <div class="cards">
+                <i class="fa-solid fa-terminal icon"></i>
+                <h3>Web Developemt</h3>
+                <p>
+                  A full-stack developer is a developer or engineer who can
+                  build both the front end and the back end of a website. The
+                  front end (the parts of a website a user sees and interacts
+                  with) and the back end (the behind-the-scenes data storage and
+                  processing) require different skill sets.
+                </p>
+                <p class="cards-btn learn-more-btn" onclick="notfoundpage()">
+                  learn more
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- -----works-section----- -->
+        <div class="Work-section">
+          <div class="work-container">
+            <h1>My works</h1>
+            <div class="work-section-row">
+              <div class="image-card">
+                <img src="./assets/work1.jpg" alt="" />
+                <div class="shadow">
+                  <h1>Responsive website</h1>
+                  <p>
+                    Web design and Responsive and <br />
+                    Enjoy more feature with midgen
+                  </p>
+                  <p class="shadow-btn" onclick="notfoundpage()">
+                    <i class="fa-solid fa-up-right-from-square"></i>
+                  </p>
+                </div>
+              </div>
+              <div class="image-card">
+                <img src="./assets/work2.jpg" alt="" />
+                <div class="shadow">
+                  <h1>personal porfolio</h1>
+                  <p>
+                    personal portfolio build a reasonable price <br />
+                    what you need all solutions here !
+                  </p>
+                  <p class="shadow-btn" onclick="notfoundpage()">
+                    <i class="fa-solid fa-up-right-from-square"></i>
+                  </p>
+                </div>
+              </div>
+              <div class="image-card">
+                <img src="./assets/work3.jpg" alt="" />
+                <div class="shadow">
+                  <h1>Bussiness website</h1>
+                  <p>
+                    Make a Bussiness custom website free <br />
+                    hosting and enjoy featurs with midgen
+                  </p>
+
+                  <p class="shadow-btn" onclick="notfoundpage()">
+                    <i class="fa-solid fa-up-right-from-square"></i>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <button class="btn-see-more">See more</button>
+          </div>
+        </div>
+
+        <!-- ----contact-Me------- -->
+        <div class="Contact-section" id="contact">
+          <div class="container-box">
+            <div class="contact-column-1">
+              <h1>Contact Me</h1>
+
+              <p>
+                <a href=""><i class="fa-solid fa-envelope"></i></a>
+                shofikulsamz995@gmail.com
+              </p>
+              <p>
+                <a href=""><i class="fa-solid fa-phone"></i></a>
+                01308050695
+              </p>
+
+              <p>
+                <a href=""><i class="fa-solid fa-location-dot"></i></a>
+                Address
+              </p>
+              <span class="location">Mirpur Dhaka , 1216</span>
+              <div class="social-icons">
+                <a
+                  href="https://www.facebook.com/profile.php?id=100038513453747"
+                >
+                  <i class="fa-brands fa-facebook"></i>
+                </a>
+                <a href="https://www.instagram.com/parvez_995/">
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://github.com/Apon995">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/shofikul-islam-parvez-99081a281/"
+                >
+                  <i class="fa-brands fa-linkedin"></i>
+                </a>
+              </div>
+              <a href="./assets/My-cv.pdf">Download CV </a>
+            </div>
+            <div class="contact-column-2">
+              <span class="visitor-msg"> </span>
+              <form method="post" name="submit-to-google-sheet">
+                <input
+                  type="text"
+                  id="Name"
+                  name="Name"
+                  placeholder="Enter your name"
+                  required
+                />
+                <br />
+                <input
+                  type="email"
+                  id="email"
+                  name="Email"
+                  placeholder="Enter your email"
+                  required
+                />
+                <br />
+                <textarea
+                  name="Message"
+                  id="msg"
+                  cols="5"
+                  rows="5"
+                  placeholder="Enter your message "
+                ></textarea>
+                <br />
+                <button type="submit" class="btn-submit">Submit</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <hr />
+    <!-- -------footer-sectionn-------------- -->
+    <footer class="footer-section">
+      <div class="footer-container">
+        <div class="footer-text">
+          <p>
+            Copyright&copy; 2023 design by Me
+          </p>
+        </div>
+        <div>
+          <div class="footer-social-icons">
+            <a href="https://www.facebook.com/profile.php?id=100038513453747&mibextid=ZbWKwL">
+              
+            <i class="fa-brands fa-facebook"> </i>
+            </a>
+            <a href="https://www.instagram.com/parvez_995/">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://github.com/Apon995">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/shofikul-islam-parvez-99081a281/">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <!-- Font-awasome-icon-script-link -->
+    <script
+      src="https://kit.fontawesome.com/37489c4c73.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

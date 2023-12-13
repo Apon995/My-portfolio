@@ -1,0 +1,239 @@
+/* ----small-screen-style---- */
+
+@media screen and (max-width: 280px) {
+  .menu-bar {
+    left: 20px;
+  }
+  
+  .percentage-bar {
+    display: block;
+    margin-bottom: 15px;
+  }
+  .work-container > .btn-see-more {
+    text-align: center;
+    display: block;
+    left: 66px;
+  }
+}
+
+@media screen and (min-width: 280px) and (max-width: 578px) {
+  .header-section {
+    width: 100%;
+    padding: 15px 8px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
+
+  .header-section > nav > .nav-ul {
+    position: fixed;
+    background:#000066;
+    color: #fff;
+    top: 72px;
+    right: -180px;
+    height: 90vh;
+    width: 160px;
+    padding-top: 40px;
+    flex-direction: column;
+    align-items: center;
+    z-index: 10;
+    transition: right 0.6s;
+  }
+  .menu-bar,
+  .cross-bar {
+    display: block;
+  }
+  .menu-bar {
+    left: 43px;
+  }
+
+  header > nav > ul > li {
+    margin: 20px 0px;
+  }
+  header > nav > ul > li a {
+    font-size: 25px;
+  }
+  .header-section > h1 {
+    font-size: 25px;
+  }
+
+  .developer-title-section {
+    width: auto;
+  }
+
+  .developer-title-section > .container {
+    flex-direction: column;
+    align-items: center;
+
+    padding: 40px 0px;
+    gap: 90px;
+  }
+  .developer-title > h1 {
+    width: auto;
+    height: 190px;
+    font-size: 2rem;
+    line-break: lose;
+  }
+  .developer-title,
+  .developer-logo {
+    flex-basis: 100%;
+    padding: 20px 10px;
+  }
+
+  .developer-logo img {
+    width: 80%;
+  }
+
+  /* -------about-section-------- */
+  .About-section {
+    position: relative;
+    width: 100%;
+  }
+  .About-info > .skills {
+    max-height: 575px;
+  }
+
+  .container {
+    display: flex;
+    padding: 10px 0px;
+    flex-direction: column;
+  }
+  .About-column-1,
+  .About-column-2 {
+    justify-content: center;
+    flex-basis: 100%;
+  }
+  .About-column-1 {
+    width: 100%;
+    text-align: center;
+  }
+  .About-column-1 > img {
+    width: 75%;
+    height: 70%;
+  }
+  column-2 > .About-info {
+    color: #ffff;
+    padding: 25px 0px;
+  }
+
+  .About-column-2 {
+    padding: 10px 10px;
+    
+  }
+
+  .percentage-bar {
+    margin-bottom: 9px;
+    width: 90%;
+    height: 8px;
+    border-radius: 5px;
+    border: 1px solid #adadad;
+  }
+ 
+
+  /* -----service-section------ */
+  .service-box {
+    padding: 20px 3%;
+  }
+  .service-box > .service-row {
+    grid-template-columns: 1fr;
+  }
+  /* ------work-section-style------ */
+  .work-container > .btn-see-more {
+    left: 102px;
+  }
+  .work-container {
+    padding: 20px 7%;
+  }
+
+  /* ------contact-section-style------- */
+  .Contact-section {
+    width: 100%;
+    padding: 10px 0px;
+  }
+
+  .container-box {
+    padding: 10px 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .contact-column-1,
+  .contact-column-2 {
+    flex-basis: 100%;
+    width: auto;
+  }
+  .contact-column-2 {
+    padding: 30px 0px;
+  }
+  .contact-column-2 > form input,
+  textarea {
+    width: 95%;
+  }
+
+  /* ------foooter-section-style------ */
+
+  .footer-container {
+    padding: 20px 2%;
+  }
+  .footer-social-icons {
+    display: none;
+  }
+  .footer-container > .footer-text > p,
+  a {
+    font-size: 1.3rem;
+    color: #adadad;
+  }
+}
+
+@media screen and (min-width: 578px) and (max-width: 992px) {
+  .header-section {
+    padding: 30px 8%;
+  }
+  header > nav > ul > li a {
+    font-size: 1.4rem;
+  }
+  .developer-logo {
+    margin-top: 90px;
+  }
+  .developer-title > h1 {
+    font-size: 2.6rem;
+  }
+  .developer-title-section > .container {
+    flex-direction: column;
+    padding: 50px 8%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .About-section > .container {
+    padding: 30px 3%;
+  }
+
+  .About-column-1 {
+    height: 600px;
+    flex-basis: 35%;
+  }
+
+  .About-column-2 {
+    flex-basis: 65%;
+    padding: 10px 13px;
+    height: 159vh;
+  }
+
+  
+  .service-box {
+    padding: 108px 3%;
+  }
+  .work-container {
+    padding: 18px 3%;
+  }
+  .container-box {
+    padding: 10px 3%;
+  }
+  .btn-see-more {
+    left: 292px;
+  }
+  .footer-container {
+    padding: 20px 3%;
+  }
+}
